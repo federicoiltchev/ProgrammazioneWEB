@@ -1,0 +1,4 @@
+Forward
+Il tag JSP di forward actipm viene utilizzato per inoltrare una richiesta a un'altra risorsa. La richiesta può essere inoltrata con o senza parametri. In questo tutorial vedremo degli esempi di tag di azione <jsp:forward>.
+Nella mia implementazione non vengono passati parametri, semplicmente attraverso la riga
+<jsp:forward page="display.jsp" />  viene inoltrata la richiesta

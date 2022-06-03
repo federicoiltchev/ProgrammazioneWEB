@@ -1,0 +1,8 @@
+includeAction
+Ci sono 2 file: index.jsp e Pagina2.jsp
+Il tag include action viene utilizzato per includere un'altra risorsa nella pagina JSP corrente. La risorsa inclusa può essere una pagina statica in HTML, una pagina JSP o una Servlet. Si possono anche passare parametri e relativi valori alla risorsa che si sta includendo. 
+Nel mio esempio semplicemente all'interno dell'index includo la pagina 2 con la sintassi
+<jsp:include page="Pagina2.jsp" /> 
+In questo modo il suo contenuto viene inserito. Nel mio esempio non venivano utilizzati parametri.
+Se avessi voluto utilizzare parametri avrei dovuto invece dichiarare ognuno di essi sempre nell'index. Questi con la sintassi
+<jsp:param name="userid" value="Fede" /> 

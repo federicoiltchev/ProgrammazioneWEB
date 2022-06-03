@@ -1,0 +1,10 @@
+Ho utilizzato 3 file: Dettagli.java, userDetails.jsp, index.jsp.
+Ho utilizzato appunto una beanclass, con i 3 metodi useBean, setProperty e getProperty.
+Abbiamo una beanClass Dettagli in cui sono presenti tre variabili: username, età e password. Per poter utilizzare la classe bean e le sue proprietà in JSP, abbiamo inizializzato la classe userdetails.jsp.
+<jsp:useBean id="userinfo" class="beginnersbook.com.Details"></jsp:useBean>
+La classe si trova dunque nel package beginnersbook.com e perciò il nome completo risulta beginnersbook.com.Details.
+Abbiamo mappato le proprietà della beanclass e JSP con il tag action setProperty.
+Qui vi è un '*' nel campo proprietà per mappare il valore in base ai loro nomi poichè abbiamo usato lo stesso nome sia per la beanclass sia per JSP. Nel nome invece mettiamo l'identificatore definito nel tag useBean.
+<jsp:setProperty property="*" name="userinfo"/>
+Per prelevare invece i valori utilizziamo getProperty.
+<jsp:getProperty property="propertyname" name="userinfo"/>

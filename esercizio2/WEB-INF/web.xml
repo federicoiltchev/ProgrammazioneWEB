@@ -1,0 +1,67 @@
+<web-app>
+	<display-name>
+		Nome della nostra undicesima applicazione: bilanciamento
+	</display-name>
+	<description>
+	Questa app bilancia il carico tra due servlet
+	</description>
+
+	<servlet>
+		<servlet-name> 
+			nome1
+		</servlet-name>
+
+		<servlet-class>
+			S1
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name> 
+			nome1
+		</servlet-name>
+		<url-pattern>
+			/alias1
+		</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name> 
+			nomeacaso
+		</servlet-name>
+
+		<servlet-class>
+			LoadBalance
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name> 
+			nomeacaso
+		</servlet-name>
+		<url-pattern>
+			/bilancia
+		</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name> 
+			nome2
+		</servlet-name>
+
+		<servlet-class>
+			S2
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name> 
+			nome2
+		</servlet-name>
+		<url-pattern>
+			/alias2
+		</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

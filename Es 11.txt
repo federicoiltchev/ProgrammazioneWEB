@@ -1,0 +1,9 @@
+Es 11
+
+Adattare l’esempio del DataBase AnimalSurvey la possibilità
+di aggiungere colonne allo schema di una tabella, e usarla per
+aggiungere una colonna "Percentage" da aggiornare a ogni
+nuovo voto espresso.
+
+ALTER TABLE AnimalSurvey 
+	ADD Percentage FLAOAT(0,100) NOT NULL;

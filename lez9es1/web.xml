@@ -1,0 +1,26 @@
+<web-app>
+	<display-name>
+	Questa applicazione si preoccupa di contare quanti accessi sono stati fatti e su quale servlet ci si trova
+	</display-name>
+	<description>
+	una semplice servlet di saluto
+	</description>
+
+	<servlet>
+		<servlet-name>
+			nomelocale
+		</servlet-name>
+		<servlet-class>
+			ServletDiSaluto
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>
+                        nomelocale
+                </servlet-name>
+		<url-pattern>
+			/alias1
+		</url-pattern>
+	</servlet-mapping>
+</web-app>

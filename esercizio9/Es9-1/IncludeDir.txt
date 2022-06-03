@@ -1,0 +1,14 @@
+Direttiva "Include"
+L'inclusione avviene al momento della traduzione, quando la pagina JSP inclusa viene compilata. Il compilatore JSP fonde il codice sorgente del file incluso nella pagina JSP corrente per produrre la pagina finale. 
+Seguiamo delle regole
+- La pagina inclusa non può modificare il codice di stato della risposta o impostare intestazioni. Il contenitore JSP ignorerà tali tentativi.
+- Il compilatore JSP inserisce il codice sorgente letterale della pagina inclusa nella posizione in cui è dichiarata la direttiva include (sensibile alla posizione).
+- L'espressione runtime non è accettata per l'URL del file, poiché l'inclusione avviene in fase di traduzione e non di esecuzione.
+- La direttiva include non può includere contenuto dinamico come una servlet.
+- Il compilatore JSP lancerà un'eccezione se non riesce a trovare la pagina inclusa.
+
+Ci sono 3 file: home.jsp, footer.html, header.html
+
+Poiché l'intestazione e il piè di pagina sono comuni a tutte le pagine, li separo in due file in modo da poterli riutilizzare più volte. 
+Quindi creo un file chiamato footer e un file chiamato header.
+All'interno del body quindi uso la direttiva include per richiamare header e footer e nel loro mezzo inserisco paragrafi o comunque il contenuto che mi interessa
